@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.114" errors="0" skipped="0" tests="4" name="numeros.numeroTest">
+<testsuite failures="0" time="0.075" errors="0" skipped="0" tests="4" name="numeros.numeroTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="c:\Program Files\Java\jdk1.7.0_25\jre\bin"/>
@@ -61,8 +61,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="0.11" classname="numeros.numeroTest" name="imprimirNumdel1_100fizzBuzz"/>
-  <testcase time="0" classname="numeros.numeroTest" name="comprobarMultiplo3"/>
-  <testcase time="0.001" classname="numeros.numeroTest" name="comprobarMultiplo5"/>
+  <testcase time="0.065" classname="numeros.numeroTest" name="imprimirNumdel1_100fizzBuzz"/>
+  <testcase time="0.005" classname="numeros.numeroTest" name="comprobarMultiplo3"/>
+  <testcase time="0.002" classname="numeros.numeroTest" name="comprobarMultiplo5"/>
   <testcase time="0.003" classname="numeros.numeroTest" name="comprobarMultiplo3_5"/>
 </testsuite>
