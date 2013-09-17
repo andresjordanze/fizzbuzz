@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/[andresjordanze]/[FizzBuzz].png)](https://travis-ci.org/[andresjordanze]/[FizzBuzz])
+[![Build Status](https://travis-ci.org/andresjordanze/fizzbuzz.png)](https://travis-ci.org/andresjordanze/fizzbuzz)
 
 
 FizzBuzz
