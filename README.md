@@ -1,3 +1,4 @@
+https://travis-ci.org/[andresjordanze]/[fizzbuzz].png
 [![Build Status](https://travis-ci.org/[andresjordanze]/[fizzbuzz].png)](https://travis-ci.org/[andresjordanze]/[fizzbuzz])
 
 
