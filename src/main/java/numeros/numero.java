@@ -1,38 +1,27 @@
 package numeros;
 
 public class numero {
-	private int tam = 100;
+		
+	private static final int _FIZZ = 3;
+	private static final int _BUZZ = 5;
+	private static final String _MENSAJE_FIZZ = "Fizz";
+	private static final String _MENSAJE_BUZZ = "Buzz";
+	private static final String _MENSAJE_FIZZBUZZ = "FizzBuzz";
 	
-	public void imprimir(){
-		for(int i=1;i<=tam;i++){
-			
-			if(esMultiplo3(i)&&esMultiplo5(i)){
-				System.out.println("FizzBuzz");
-			}else if(esMultiplo5(i)){
-					System.out.println("Buzz");
-				}else if(esMultiplo3(i)){
-						System.out.println("Fizz");
-					}else{
-						System.out.println(i);
-					}
-		}
+	
+	public String generar(int numero){
+		if(esMultiploDe(numero,_FIZZ)&&esMultiploDe(numero,_BUZZ))
+			return _MENSAJE_FIZZBUZZ;
+		if(esMultiploDe(numero,_FIZZ))
+			return _MENSAJE_FIZZ;
+		if(esMultiploDe(numero,_BUZZ))
+			return _MENSAJE_BUZZ;
+		return Integer.toString(numero);
 	}
 	
-	public boolean esMultiplo3(int num){
-		if (num%3==0){
-			return true;
-		}else{
-			return false;
-		}
+	private boolean esMultiploDe(int numero, int multiplo){
+		return numero % multiplo == 0;
 	}
-	
-	public boolean esMultiplo5(int num){
-		if (num%5==0){
-			return true;
-		}else{
-			return false;
-		}
-	}
-	
+		
 }
 

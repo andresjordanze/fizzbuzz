@@ -6,35 +6,49 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class numeroTest {
+	private numero fb;
 
-	numero fb;
-	
 	@Before
-	public void Setup(){
+	public void setup() {
 		fb = new numero();
 	}
-	
-	numero nums = new numero();
+
 	@Test
-	public void imprimirNumdel1_100fizzBuzz() {
-		
-		nums.imprimir();
+	public void generaFizzSiNumeroEs3() {
+		assertEquals("Fizz",fb.generar(3));
 	}
-	
+
 	@Test
-	public void comprobarMultiplo3(){
-		assertEquals(true,nums.esMultiplo3(9));
+	public void generaElMismoNumeroSiNoEs3()
+	{
+		assertEquals("4",fb.generar(4));
 	}
-	
+
 	@Test
-	public void comprobarMultiplo5(){
-		assertEquals(true,nums.esMultiplo5(10));
+	public void generaFizzSiEsMultiploDe3()
+	{
+		assertEquals("Fizz",fb.generar(6));
 	}
-	
+
+	@Test 
+	public void generaBuzzSiNumero5(){
+		assertEquals("Buzz",fb.generar(5));
+	}
+
 	@Test
-	public void comprobarMultiplo3_5(){
-		assertEquals(true,nums.esMultiplo3(15) && nums.esMultiplo5(15));
+	public void generaBuzzSiEsMultiplo5(){
+		assertEquals("Buzz",fb.generar(10));
 	}
-	
+
+	@Test
+	public void generaFizzBuzzPara15(){
+		assertEquals("FizzBuzz",fb.generar(15));
+	}
+
+	@Test
+	public void imprimeFizzBuzzParaMultiploDe3y5(){
+		assertEquals("FizzBuzz",fb.generar(30));
+		assertEquals("FizzBuzz", fb.generar(60));
+	}
 
 }
