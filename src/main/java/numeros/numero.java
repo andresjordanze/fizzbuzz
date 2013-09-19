@@ -22,6 +22,13 @@ public class numero {
 	private boolean esMultiploDe(int numero, int multiplo){
 		return numero % multiplo == 0;
 	}
+	
+	public String imprimir(int maximo) {
+		String resultado = "";
+		for (int i = 1; i <= maximo; i++)
+			resultado = resultado + generar(i) + "\n";
+		return resultado;
+	}
 		
 }
 

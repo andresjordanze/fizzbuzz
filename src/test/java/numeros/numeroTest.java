@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class numeroTest {
 	private numero fb;
-
+	
 	@Before
 	public void setup() {
 		fb = new numero();
@@ -46,9 +46,31 @@ public class numeroTest {
 	}
 
 	@Test
-	public void imprimeFizzBuzzParaMultiploDe3y5(){
+	public void generaFizzBuzzParaMultiploDe3y5(){
 		assertEquals("FizzBuzz",fb.generar(30));
 		assertEquals("FizzBuzz", fb.generar(60));
 	}
 
+	@Test
+	public void generaElNumeroSiNoEsMultiploDe3Ni5(){
+		assertEquals("7", fb.generar(7));
+		assertEquals("8", fb.generar(8));
+	}
+
+	@Test
+	public void imprimeUnaSecuenciaDeNumerosConReglasFizzBuzz(){
+		String esperado =  "1\n"+
+			    			"2\n"+
+			    			"Fizz\n"+
+			    			"4\n"+
+			    			"Buzz\n" +
+			    			"Fizz\n"+
+			    			"7\n"+
+			    			"8\n"+
+			    			"Fizz\n"+
+			    			"Buzz\n";
+		assertEquals(esperado, fb.imprimir(10));
+
+	}
+	
 }
